@@ -20,16 +20,16 @@ import (
 	"context"
 	"os"
 
+	"github.com/cjhpaul/controller-runtime/pkg/controller"
+	"github.com/cjhpaul/controller-runtime/pkg/handler"
+	logf "github.com/cjhpaul/controller-runtime/pkg/log"
+	"github.com/cjhpaul/controller-runtime/pkg/manager"
+	"github.com/cjhpaul/controller-runtime/pkg/manager/signals"
+	"github.com/cjhpaul/controller-runtime/pkg/reconcile"
+	"github.com/cjhpaul/controller-runtime/pkg/source"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/source"
 )
 
 var (

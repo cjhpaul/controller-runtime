@@ -17,11 +17,11 @@ limitations under the License.
 package handler
 
 import (
+	"github.com/cjhpaul/controller-runtime/pkg/controller/controllerutil"
+	"github.com/cjhpaul/controller-runtime/pkg/event"
+	"github.com/cjhpaul/controller-runtime/pkg/reconcile"
+	"github.com/cjhpaul/controller-runtime/pkg/runtime/inject"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
 )
 
 // EnqueueRequestsFromMapFunc enqueues Requests by running a transformation function that outputs a collection

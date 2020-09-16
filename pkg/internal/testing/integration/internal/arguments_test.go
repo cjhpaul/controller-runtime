@@ -6,8 +6,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration"
-	. "sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/internal"
+	"github.com/cjhpaul/controller-runtime/pkg/internal/testing/integration"
+	. "github.com/cjhpaul/controller-runtime/pkg/internal/testing/integration/internal"
 )
 
 var _ = Describe("Arguments", func() {

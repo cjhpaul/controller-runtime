@@ -21,17 +21,17 @@ import (
 	"fmt"
 	"os"
 
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
+	logf "github.com/cjhpaul/controller-runtime/pkg/log"
 
+	"github.com/cjhpaul/controller-runtime/pkg/builder"
+	"github.com/cjhpaul/controller-runtime/pkg/client"
+	"github.com/cjhpaul/controller-runtime/pkg/client/config"
+	"github.com/cjhpaul/controller-runtime/pkg/log/zap"
+	"github.com/cjhpaul/controller-runtime/pkg/manager"
+	"github.com/cjhpaul/controller-runtime/pkg/manager/signals"
+	"github.com/cjhpaul/controller-runtime/pkg/reconcile"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
-	"sigs.k8s.io/controller-runtime/pkg/builder"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 )
 
 // This example creates a simple application ControllerManagedBy that is configured for ReplicaSets and Pods.

@@ -17,7 +17,7 @@ limitations under the License.
 package event
 
 import (
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
+	"github.com/cjhpaul/controller-runtime/pkg/controller/controllerutil"
 )
 
 // CreateEvent is an event where a Kubernetes object was created.  CreateEvent should be generated

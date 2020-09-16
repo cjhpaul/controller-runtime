@@ -1,4 +1,4 @@
-module sigs.k8s.io/controller-runtime/hack/tools
+module github.com/cjhpaul/controller-runtime/hack/tools
 
 go 1.13
 

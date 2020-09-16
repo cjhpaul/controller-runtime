@@ -17,11 +17,11 @@ limitations under the License.
 package predicate
 
 import (
+	"github.com/cjhpaul/controller-runtime/pkg/controller/controllerutil"
+	"github.com/cjhpaul/controller-runtime/pkg/event"
+	logf "github.com/cjhpaul/controller-runtime/pkg/internal/log"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("predicate").WithName("eventFilters")

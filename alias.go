@@ -17,16 +17,16 @@ limitations under the License.
 package controllerruntime
 
 import (
+	"github.com/cjhpaul/controller-runtime/pkg/builder"
+	"github.com/cjhpaul/controller-runtime/pkg/client/config"
+	"github.com/cjhpaul/controller-runtime/pkg/controller/controllerutil"
+	"github.com/cjhpaul/controller-runtime/pkg/log"
+	"github.com/cjhpaul/controller-runtime/pkg/manager"
+	"github.com/cjhpaul/controller-runtime/pkg/manager/signals"
+	"github.com/cjhpaul/controller-runtime/pkg/reconcile"
+	"github.com/cjhpaul/controller-runtime/pkg/scheme"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"sigs.k8s.io/controller-runtime/pkg/builder"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
-	"sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/scheme"
 )
 
 // Builder builds an Application ControllerManagedBy (e.g. Operator) and returns a manager.Manager to start it.

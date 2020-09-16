@@ -23,12 +23,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/cjhpaul/controller-runtime/pkg/client/config"
+	"github.com/cjhpaul/controller-runtime/pkg/internal/testing/integration"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration"
 
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	logf "github.com/cjhpaul/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("test-env")

@@ -19,11 +19,11 @@ package manager_test
 import (
 	"os"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
+	"github.com/cjhpaul/controller-runtime/pkg/cache"
+	"github.com/cjhpaul/controller-runtime/pkg/client/config"
+	logf "github.com/cjhpaul/controller-runtime/pkg/log"
+	"github.com/cjhpaul/controller-runtime/pkg/manager"
+	"github.com/cjhpaul/controller-runtime/pkg/manager/signals"
 )
 
 var (

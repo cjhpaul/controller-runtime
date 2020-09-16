@@ -22,9 +22,9 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"sigs.k8s.io/controller-runtime/pkg/envtest/printer"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
+	"github.com/cjhpaul/controller-runtime/pkg/envtest/printer"
+	logf "github.com/cjhpaul/controller-runtime/pkg/log"
+	"github.com/cjhpaul/controller-runtime/pkg/log/zap"
 )
 
 func TestConfig(t *testing.T) {

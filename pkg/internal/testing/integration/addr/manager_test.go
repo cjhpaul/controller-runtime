@@ -1,7 +1,7 @@
 package addr_test
 
 import (
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/addr"
+	"github.com/cjhpaul/controller-runtime/pkg/internal/testing/integration/addr"
 
 	"net"
 	"strconv"

@@ -38,16 +38,16 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/leaderelection/resourcelock"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/cache/informertest"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	intrec "sigs.k8s.io/controller-runtime/pkg/internal/recorder"
-	"sigs.k8s.io/controller-runtime/pkg/leaderelection"
-	fakeleaderelection "sigs.k8s.io/controller-runtime/pkg/leaderelection/fake"
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/recorder"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	"github.com/cjhpaul/controller-runtime/pkg/cache"
+	"github.com/cjhpaul/controller-runtime/pkg/cache/informertest"
+	"github.com/cjhpaul/controller-runtime/pkg/client"
+	intrec "github.com/cjhpaul/controller-runtime/pkg/internal/recorder"
+	"github.com/cjhpaul/controller-runtime/pkg/leaderelection"
+	fakeleaderelection "github.com/cjhpaul/controller-runtime/pkg/leaderelection/fake"
+	"github.com/cjhpaul/controller-runtime/pkg/metrics"
+	"github.com/cjhpaul/controller-runtime/pkg/reconcile"
+	"github.com/cjhpaul/controller-runtime/pkg/recorder"
+	"github.com/cjhpaul/controller-runtime/pkg/runtime/inject"
 )
 
 var _ = Describe("manger.Manager", func() {

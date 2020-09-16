@@ -29,11 +29,11 @@ import (
 	"strconv"
 	"sync"
 
+	"github.com/cjhpaul/controller-runtime/pkg/runtime/inject"
+	"github.com/cjhpaul/controller-runtime/pkg/webhook/internal/certwatcher"
+	"github.com/cjhpaul/controller-runtime/pkg/webhook/internal/metrics"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/webhook/internal/certwatcher"
-	"sigs.k8s.io/controller-runtime/pkg/webhook/internal/metrics"
 )
 
 // DefaultPort is the default port that the webhook server serves.

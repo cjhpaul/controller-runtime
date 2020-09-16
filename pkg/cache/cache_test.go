@@ -32,8 +32,8 @@ import (
 	"k8s.io/client-go/rest"
 	kcache "k8s.io/client-go/tools/cache"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client"
+	"github.com/cjhpaul/controller-runtime/pkg/cache"
+	"github.com/cjhpaul/controller-runtime/pkg/client"
 )
 
 const testNamespaceOne = "test-namespace-1"

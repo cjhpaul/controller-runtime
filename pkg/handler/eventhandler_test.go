@@ -17,6 +17,11 @@ limitations under the License.
 package handler_test
 
 import (
+	"github.com/cjhpaul/controller-runtime/pkg/client/apiutil"
+	"github.com/cjhpaul/controller-runtime/pkg/controller/controllertest"
+	"github.com/cjhpaul/controller-runtime/pkg/event"
+	"github.com/cjhpaul/controller-runtime/pkg/handler"
+	"github.com/cjhpaul/controller-runtime/pkg/reconcile"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	appsv1 "k8s.io/api/apps/v1"
@@ -27,11 +32,6 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllertest"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 )
 
 var _ = Describe("Eventhandler", func() {

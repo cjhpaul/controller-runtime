@@ -20,15 +20,15 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/cjhpaul/controller-runtime/pkg/envtest"
+	"github.com/cjhpaul/controller-runtime/pkg/envtest/printer"
+	logf "github.com/cjhpaul/controller-runtime/pkg/log"
+	"github.com/cjhpaul/controller-runtime/pkg/log/zap"
+	"github.com/cjhpaul/controller-runtime/pkg/metrics"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/envtest"
-	"sigs.k8s.io/controller-runtime/pkg/envtest/printer"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
 )
 
 func TestSource(t *testing.T) {

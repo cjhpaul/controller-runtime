@@ -17,8 +17,8 @@ limitations under the License.
 package predicate_test
 
 import (
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
+	"github.com/cjhpaul/controller-runtime/pkg/event"
+	"github.com/cjhpaul/controller-runtime/pkg/predicate"
 )
 
 var p predicate.Predicate

@@ -20,13 +20,13 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/cjhpaul/controller-runtime/pkg/client/apiutil"
 	"k8s.io/apimachinery/pkg/api/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
 )
 
 // clientCache creates and caches rest clients and metadata for Kubernetes types

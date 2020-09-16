@@ -22,6 +22,16 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/cjhpaul/controller-runtime/pkg/cache"
+	"github.com/cjhpaul/controller-runtime/pkg/client"
+	"github.com/cjhpaul/controller-runtime/pkg/client/apiutil"
+	"github.com/cjhpaul/controller-runtime/pkg/healthz"
+	intrec "github.com/cjhpaul/controller-runtime/pkg/internal/recorder"
+	"github.com/cjhpaul/controller-runtime/pkg/leaderelection"
+	logf "github.com/cjhpaul/controller-runtime/pkg/log"
+	"github.com/cjhpaul/controller-runtime/pkg/metrics"
+	"github.com/cjhpaul/controller-runtime/pkg/recorder"
+	"github.com/cjhpaul/controller-runtime/pkg/webhook"
 	"github.com/go-logr/logr"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
@@ -29,16 +39,6 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/leaderelection/resourcelock"
 	"k8s.io/client-go/tools/record"
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
-	"sigs.k8s.io/controller-runtime/pkg/healthz"
-	intrec "sigs.k8s.io/controller-runtime/pkg/internal/recorder"
-	"sigs.k8s.io/controller-runtime/pkg/leaderelection"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
-	"sigs.k8s.io/controller-runtime/pkg/recorder"
-	"sigs.k8s.io/controller-runtime/pkg/webhook"
 )
 
 // Manager initializes shared dependencies such as Caches and Clients, and provides them to Runnables.

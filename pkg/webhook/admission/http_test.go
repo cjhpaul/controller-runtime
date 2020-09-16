@@ -27,10 +27,10 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	"github.com/cjhpaul/controller-runtime/pkg/runtime/inject"
 
+	logf "github.com/cjhpaul/controller-runtime/pkg/internal/log"
 	admissionv1beta1 "k8s.io/api/admission/v1beta1"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
 )
 
 var _ = Describe("Admission Webhooks", func() {

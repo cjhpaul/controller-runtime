@@ -178,7 +178,7 @@ import (
 	"time"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	configv1alpha1 "sigs.k8s.io/controller-runtime/pkg/apis/config/v1alpha1"
+	configv1alpha1 "github.com/cjhpaul/controller-runtime/pkg/apis/config/v1alpha1"
 )
 
 // DefaultControllerConfiguration is the Schema for the DefaultControllerConfigurations API
@@ -246,7 +246,7 @@ import (
   "time"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	configv1alpha1 "sigs.k8s.io/controller-runtime/pkg/apis/config/v1alpha1"
+	configv1alpha1 "github.com/cjhpaul/controller-runtime/pkg/apis/config/v1alpha1"
 ) 
 
 type ControllerNameConfigurationSpec struct {
